@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css?family=Asap:400,400i");
+
+/* .Comment { color: #B22222; } */
+.Keyword { color: #CD6600; }
+.String { color: #B22222; }
+.Number { color: #A020F0; }
+.Symbol { color: #404040; }
+.PrimitiveType { color: #0000CD; }
+.Operator {}
+
+.Bound { color: black; }
+.InductiveConstructor { color: #008B00; }
+.CoinductiveConstructor { color: #8B7500; }
+.Datatype { color: #0000CD; }
+.Field { color: #EE1289; }
+.Function { color: #0000CD; }
+.Module { color: #A020F0; }
+.Postulate { color: #0000CD; }
+.Primitive { color: #0000CD; }
+.Record { color: #0000CD; }
+
+.DottedPattern {}
+.UnsolvedMeta { color: black; background: yellow; }
+.UnsolvedConstraint { color: black; background: yellow; }
+.TerminationProblem { color: black; background: #FFA07A; }
+.IncompletePattern { color: black; background: #F5DEB3; }
+.Error { color: red; text-decoration: underline; }
+.TypeChecks { color: black; background: #ADD8E6; }
+
+a[href] { text-decoration: none; }
+
+a[href]:not(#header)
+{
+	border-radius: 0.25em;
+	margin: -0.125em -0.25em;
+	padding: 0.125em 0.25em;
+	transition: background-color 0.5s ease;
+}
+
+a[href]:not(#header):hover,
+a[href]:not(#header):focus
+{
+	background-color: #B4EEB4;
+	transition-duration: 0.25s;
+}
+
+html { min-height: 100%; min-width: fit-content; }
+
+body
+{
+	background: linear-gradient(to bottom right, #BDF3 , #FBD3);
+	display: grid;
+	justify-items: center;
+	font-family: "Asap", sans-serif;
+	font-size: 20px;
+	color: #333;
+	margin: 3em;
+}
+
+pre { margin: 0; }
+
+header
+{
+	font-size: 150%;
+	margin: 0.25em;
+	padding: 0.5em 1em;
+	font-style: italic;
+	position: relative;
+	background: #FDFDFD;
+	border-radius: 0.75em;
+	transition: background-color 0.5s ease;
+}
+
+header::before
+{
+	content: "";
+	background: linear-gradient(95deg, #BDF calc(50% + 0.45em), #FBD calc(50% + 0.45em));
+	border-radius: 1em;
+	background-origin: border-box;
+	background-clip: padding-box, border-box;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: -0.25em;
+	z-index: -1;
+}
+
+#header:hover header,
+#header:focus header
+{
+	background: transparent;
+	transition-duration: 0.25s;
+}
+
+#header { color: unset; margin: 2em; margin-top: 0; display: block; }
+
+pre, code { font: unset; }
+
+::selection
+{
+	background: #BDF;
+}

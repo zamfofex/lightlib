@@ -1,0 +1,12 @@
+{
+	"version": 2,
+	"routes":
+	[
+		{"src": "/(?<path>.*?)/+", "status": 307, "headers": {"location": "/$path"}, "methods": ["GET", "HEAD"]},
+		{"src": "/(?<path>.*).html", "status": 307, "headers": {"location": "/$path"}, "methods": ["GET", "HEAD"]},
+		{"src": "/", "methods": ["GET", "HEAD"]},
+		{"src": "/Agda\\.css", "methods": ["GET", "HEAD"]},
+		{"src": "/(?<path>Light(\\..*)?)", "dest": "/$path.html", "methods": ["GET", "HEAD"]},
+		{"src": "/(?<path>.*)", "status": 307, "headers": {"location": "https://agda.github.io/agda-stdlib/$path.html"}, "methods": ["GET", "HEAD"]}
+	]
+}

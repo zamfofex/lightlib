@@ -1,0 +1,5 @@
+{
+	"scripts": {
+		"build": "mkdir -p public && mv Agda.css public && node --experimental-modules build.mjs"
+	}
+}

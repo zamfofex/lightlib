@@ -1,0 +1,3 @@
+name: lightlib
+include: . bindings/stdlib other
+depend: standard-library
