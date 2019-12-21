@@ -29,6 +29,8 @@
 .Error { color: red; text-decoration: underline; }
 .TypeChecks { color: black; background: #ADD8E6; }
 
+.Generalizable { color: black }
+
 a[href] { text-decoration: none; }
 
 a[href]:not(#header)
