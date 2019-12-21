@@ -3,5 +3,6 @@
 !build.mjs
 !html
 !html/Light.*
+!html/index.html
 !now.json
 !package.json

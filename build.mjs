@@ -7,7 +7,7 @@ let main = async () =>
 {
 	for (let name of await fsp.readdir("html"))
 	{
-		if (!name.startsWith("Light.")) continue
+		if (!name.startsWith("Light.") && name !== "index.html") continue
 		if (!name.endsWith(".html")) continue
 		
 		fsp.writeFile(
