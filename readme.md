@@ -1,6 +1,10 @@
 lightlib
 ===
 
+***NOTE:** lightlib is currently abandoned. See its closing notes in [notes.md].*
+
+[notes.md]: notes.md
+
 lightlib is an alternative core library for Agda. The hope is to provide the basic set of needed definitions for programming in Agda.
 
 It is meant to be used for writing programs primarily, and as such, it makes various decisions that facilitate programming over proving.
